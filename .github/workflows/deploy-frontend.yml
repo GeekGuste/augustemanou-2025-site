@@ -1,0 +1,75 @@
+name: Deploy Frontend via FTP
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - "front/**"
+      - ".github/workflows/deploy-frontend.yml"
+  workflow_dispatch:
+
+jobs:
+  deploy-frontend:
+    runs-on: ubuntu-latest
+
+    # Évite les déploiements qui se chevauchent
+    concurrency:
+      group: deploy-frontend
+      cancel-in-progress: true
+
+    env:
+      FRONTEND_DIR: front
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # Installe les deps du front
+      - name: Install deps (npm ci)
+        working-directory: ${{ env.FRONTEND_DIR }}
+        run: npm ci
+
+      # Build le front
+      - name: Build frontend
+        working-directory: ${{ env.FRONTEND_DIR }}
+        run: npm run build
+
+      # Détermine le dossier de sortie (dist ou build)
+      - name: Detect build output dir
+        working-directory: ${{ env.FRONTEND_DIR }}
+        run: |
+          if [ -d "dist" ]; then
+            echo "BUILD_DIR=dist" >> $GITHUB_ENV
+          elif [ -d "build" ]; then
+            echo "BUILD_DIR=build" >> $GITHUB_ENV
+          else
+            echo "Aucun dossier de build trouvé (dist ou build)."
+            exit 1
+          fi
+
+      # Déploie via FTP (FTPS explicite recommandé)
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4
+        with:
+          server:     ${{ secrets.FTP_SERVER }}
+          username:   ${{ secrets.FTP_USERNAME }}
+          password:   ${{ secrets.FTP_PASSWORD }}
+          port:       ${{ secrets.FTP_PORT || 21 }}
+          security:   explicit
+          # répertoire distant de votre hébergement où doit vivre le front (ex: /www/, /public_html/, /site/…)
+          server-dir: ${{ secrets.FTP_REMOTE_DIR || '/' }}
+          # on envoie le contenu du dossier de build
+          local-dir:  ${{ env.FRONTEND_DIR }}/${{ env.BUILD_DIR }}/
+          # optionnel : purge avant upload (attention destructif)
+          # dangerous-clean-slate: true
+          exclude: |
+            **/.git*
+            **/.DS_Store
+            **/node_modules/**
+            **/*.map
