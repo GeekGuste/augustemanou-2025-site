@@ -1,0 +1,32 @@
+<section class="title-section bg bg-primary text-white py-5 mb-5">
+	<div class="container">
+		<h1 class="text-center">Portfolio</h1>
+		<p>
+			Voici une sélection de projets sur lesquels j’ai travaillé, allant d’applications métier à des sites
+			vitrines
+			personnalisés. Chaque réalisation reflète ma passion pour le code propre et les interfaces intuitives. <br>
+			Les projets effectués en regies ne sont pas présentés ici pour des raisons de confidentialité. Vous pouvez
+			néanmoins avoir plus de détails dans mon dossier de compétences.
+		</p>
+	</div>
+</section>
+<section class="portfolio-section py-5">
+	<div class="container">
+		<div class="row g-4">
+			<div class="col-md-4" *ngFor="let project of projects">
+				<a [routerLink]="['/portfolio', project.slug]" class="text-decoration-none text-dark">
+					<div class="card h-100 shadow-sm border-0">
+						<img [src]="project.image" [alt]="project.title" class="card-img-top project-img">
+						<div class="card-body">
+							<h5 class="card-title">{{ project.title }}</h5>
+							<p class="card-text">{{ project.excerpt }}</p>
+							<div class="text-end">
+								<span class="btn btn-sm btn-outline-primary">En savoir plus</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>

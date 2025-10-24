@@ -1,0 +1,28 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+
+# Rider
+.idea/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Logs
+*.log
+
+# Secrets / configs
+secrets.json
+appsettings.Development.json
+appsettings.*.local.json
+
+# Others
+*.DS_Store
+*.env
+node_modules/
+.vscode/
+.vs/

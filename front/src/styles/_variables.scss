@@ -1,0 +1,36 @@
+// Définition des couleurs AVANT l'import Bootstrap
+$primary: #0461BD;
+//$secondary: #0461BD;
+$secondary: #6c757d;
+$success: #198754;
+$white-soft: #F8F9FA;
+$danger: #dc3545;
+$warning: #ffc107;
+$accent-yellow: #FFD700;
+$info: #0dcaf0;
+$light: #f8f9fa;
+$dark: #212529;
+$dark-blue: #0A2540;
+
+// Couleurs additionnelles (perso)
+$light-blue: #E6F4FF;
+$deep-blue: #000080;
+$accent: #08C2F9;
+
+// Étendre les couleurs disponibles de Bootstrap
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "accent": $accent,
+  "deep-blue": $deep-blue,
+  "light-blue": $light-blue,
+  "dark-blue": $dark-blue,
+  "white-soft": $white-soft,
+  "accent-yellow": $accent-yellow,
+  "light": $light,
+  "dark": $dark,
+  'danger': $danger,
+);

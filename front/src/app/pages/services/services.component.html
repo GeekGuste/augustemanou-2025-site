@@ -1,0 +1,40 @@
+<section class="title-section bg bg-primary text-white py-5 mb-5">
+	<div class="container">
+		<h1 class="text-center">Services</h1>
+		<p>
+      Découvrez mes services sur mesure, conçus pour transformer vos défis en solutions concrètes 
+      et créer une réelle valeur ajoutée pour votre entreprise.
+		</p>
+	</div>
+</section>
+<section class="services-section py-5">
+    <div class="container text-dark">
+
+        <div class="row g-5">
+            <div class="col-md-6" *ngFor="let service of services" [attr.id]="service.slug">
+                <div class="service-card p-4 h-100 shadow-sm rounded bg-white">
+                    <div class="text-center mb-3">
+                      <div class="service-icon mx-auto">
+                        <i [class]="service.icon"></i>
+                      </div>
+                    </div>
+                    <h4 class="fw-bold text-primary text-center">{{ service.name }}</h4>
+                    <p class="text-dark mt-2 text-center text-md-start">{{ service.description }}</p>
+                
+                    <ul class="list-unstyled mt-3">
+                      <li *ngFor="let point of service.details" class="d-flex align-items-center mb-2">
+                        <i class="bi bi-check-circle-fill me-2 fs-5 text-primary"></i>
+                        <span class="text-dark small">{{ point }}</span>
+                      </li>
+                    </ul>
+                
+                    <div class="text-end mt-3">
+                      <a [routerLink]="['/contact']" [queryParams]="{ motif: service.slug }" class="btn btn-outline-primary btn-sm">
+                        Me contacter pour ce service
+                      </a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>

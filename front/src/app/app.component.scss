@@ -1,0 +1,15 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.nav-linl.active {
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.footer-section {
+    background-color: #0A2540; // bleu très foncé
+    color: #ffffff;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

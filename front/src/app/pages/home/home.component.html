@@ -1,0 +1,113 @@
+<!-- Hero Section -->
+<header class="text-white text-center d-flex align-items-center">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="display-4 fw-bold text-center">
+                    {{ data.home.punchline }}
+                </h1>
+            </div>
+            <div class="col-md-6">
+                <h3 class="fw-bold text-center">{{ data.home.punchlineShort }}</h3>
+                <img src="assets/rentabilite.png" class="img-fluid object-fit-cover" style="max-height: 250px;"
+                    [alt]="data.home.punchlineShort">
+            </div>
+            <div class="col-md-6">
+                <ul class="details-punchline list-unstyled small mb-3">
+                    @for (d of data.home.detailsPunchline; track $index) {
+                    <li class="d-flex align-items-start mb-3 gap-2">
+                        <span class="bullet-icon" aria-hidden="true">
+                            <!-- SVG check-circle -->
+                            <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor">
+                                <path
+                                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm3.354-8.854a.5.5 0 0 0-.708-.708L7 9.293 5.354 7.646a.5.5 0 1 0-.708.708L6.646 10.354a.5.5 0 0 0 .708 0l3.999-3.999z" />
+                            </svg>
+                        </span>
+                        <span>{{ d }}</span>
+                    </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="hero-section text-center d-flex align-items-center">
+    <div class="row container">
+        <div class="col-md-6">
+            <div class="avatar-wrapper mx-auto mb-4">
+                <img src="assets/avatar.png" alt="Photo de profil" class="rounded-circle avatar-img">
+            </div>
+            <h1 class="display-4 fw-bold">{{ data.home.titre }}</h1>
+            <p class="lead fst-italic">{{ data.home.role }}</p>
+        </div>
+        <div class="col-md-6">
+            <div class="container text-center text-md-start">
+                <h2 class="mb-4">{{ data.about.titre }}</h2>
+                <p class="lead">{{ data.about.description }}</p>
+                <p><strong>Technos principales :</strong> {{ data.about.technos }}</p>
+            </div>
+            <div class="mt-2 row">
+                <div class="col-md-6">
+                    <a href="assets/CV-JohnDev.pdf" class="btn btn-primary btn-lg me-2 mt-2">
+                        <i class="bi bi-download me-1"></i> Voir mon CV
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="assets/Competences-JohnDev.pdf" class="btn btn-outline-primary btn-lg  mt-2">
+                        <i class="bi bi-file-earmark-text me-1"></i> Dossier de compétences
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects-section py-5" id="projects">
+    <div class="container">
+        <h2 class="mb-4 text-md-start">Mes dernières réalisations</h2>
+        <div class="row g-4">
+            <div class="col-md-4" *ngFor="let project of data.portfolio.projects | slice:0:3">
+                <div class="card h-100 shadow-sm border-0">
+                    <img [src]="project.image" [alt]="project.title" class="card-img-top project-image">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ project.title }}</h5>
+                        <p class="card-text">{{ project.excerpt }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a routerLink="/portfolio" class="btn btn-outline-primary">
+                Voir tous les projets <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="services-section py-5" id="services">
+    <div class="container">
+        <h2 class="mb-4 text-center text-md-start">Mes services</h2>
+        <div class="row g-4">
+            <div class="col-md-4" *ngFor="let service of data.services.services">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <i [class]="service.icon" class="service-icon mb-3"></i>
+                        <h5 class="card-title">{{ service.name }}</h5>
+                        <p class="card-text">{{ service.description }}</p>
+                        <ul class="list-inline mt-3">
+                            <li class="list-inline-item badge bg-light text-dark px-2" *ngFor="let tag of service.tags">
+                                {{ tag }}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a routerLink="/services" class="btn btn-outline-primary">
+                Découvrir tous les services <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+        </div>
+    </div>
+</section>

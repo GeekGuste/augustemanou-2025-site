@@ -1,0 +1,24 @@
+<section class="project-detail py-5" *ngIf="project">
+	<div class="container">
+		<h2 class="mb-3">{{ project.title }}</h2>
+		<div *ngIf="project.tags?.length" class="mb-4">
+			<span class="badge bg-light text-dark me-2" *ngFor="let tag of project.tags">
+				{{ tag }}
+			</span>
+		</div>
+
+		<!-- Galerie d’images -->
+		<div class="row g-3 mb-5">
+			<div class="col-md-4" *ngFor="let image of project.images; let i = index" (click)="openLightbox(i)"
+				style="cursor: zoom-in;">
+				<img [src]="image" [alt]="project.title" class="img-fluid rounded shadow-sm w-100" />
+			</div>
+		</div>
+		<div class="row mb-4">
+			{{ project.description }}
+		</div>
+		<a routerLink="/portfolio" class="btn btn-outline-primary">
+			<i class="bi bi-arrow-left me-1"></i> Retour au portfolio
+		</a>
+	</div>
+</section>

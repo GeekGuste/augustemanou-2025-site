@@ -1,0 +1,30 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">Auguste Dev</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Accueil</a></li>
+        <!--li class="nav-item"><a class="nav-link" routerLink="/a-propos" routerLinkActive="active">À propos</a></li-->
+        <li class="nav-item"><a class="nav-link" routerLink="/portfolio" routerLinkActive="active">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/services" routerLinkActive="active">Services</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a></li>
+        <!--li class="d-flex align-items-center">
+          <app-language-switcher></app-language-switcher>
+        </li-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet />
+<!-- Contact Section -->
+<app-contact-call></app-contact-call>
+<!-- Footer -->
+<footer class="footer-section py-3">
+  <div class="container text-center">
+    <small>&copy; 2025 Abbaltu Auguste MANOU - Tous droits réservés</small>
+  </div>
+</footer>

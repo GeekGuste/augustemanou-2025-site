@@ -1,0 +1,60 @@
+@import "styles/bootstrap";
+
+/* Typo */
+$font-family-base: 'Inter', sans-serif;
+$text-color: #F8F9FA;
+$navbar-bg: rgba(0, 0, 50, 0.7);
+
+.custom-navbar {
+    background-color: $navbar-bg;
+    backdrop-filter: blur(6px);
+    color: $text-color;
+
+    .navbar-brand,
+    .nav-link {
+        color: $text-color;
+
+        &:hover {
+            color: $text-color;
+        }
+    }
+
+    .dropdown {
+        .dropdown-toggle {
+            color: $text-color;
+            background-color: $navbar-bg;
+            backdrop-filter: blur(6px);
+        }
+
+        .dropdown-menu {
+            background-color: $navbar-bg;
+            backdrop-filter: blur(6px);
+
+            .dropdown-item {
+                color: $text-color;
+
+                &:hover {
+                    background-color: darken($navbar-bg, 10%);
+                }
+            }
+        }
+    }
+}
+
+body {
+    font-family: $font-family-base;
+    color: $text-color;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0A2540; // bleu très foncé ou noir doux
+}
+
+.badge {
+    font-size: 0.85rem;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}

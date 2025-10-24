@@ -1,0 +1,13 @@
+<div class="dropdown">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        {{ currentLang === 'fr' ? 'Français' : 'English' }}
+    </button>
+    <ul class="dropdown-menu">
+        <li>
+            <a class="dropdown-item" href="#" (click)="switchLang('fr')">🇫🇷 Français</a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="#" (click)="switchLang('en')">🇬🇧 English</a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,21 @@
+.contact-page {
+    max-width: 700px;
+    margin: 0 auto;
+
+    h2 {
+        font-weight: bold;
+        color: #0461BD;
+    }
+
+    .form-control,
+    .form-select {
+        border-radius: 6px;
+        box-shadow: none;
+    }
+
+    button {
+        border-radius: 30px;
+        padding: 10px 30px;
+        font-weight: 500;
+    }
+}

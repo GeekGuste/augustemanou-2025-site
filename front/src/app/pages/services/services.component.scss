@@ -1,0 +1,36 @@
+.service-card {
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    }
+
+    .service-icon {
+        width: 64px;
+        height: 64px;
+        background-color: #E6F4FF;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8rem;
+        color: #0461BD;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #333;
+    }
+
+    .btn {
+        font-size: 0.85rem;
+        padding: 6px 16px;
+        border-radius: 20px;
+    }
+}
