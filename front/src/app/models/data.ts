@@ -22,7 +22,7 @@ export const DATA = {
     },
     about: {
         titre: "J'aide les entreprises à propulser leur croissance grâce à des applications puissantes et sur-mesure.",
-        description: "Passionné par la création d'applications innovantes. Mon objectif est de transformer vos idées en solutions concrètes et innovantes.",
+        description: "Passionné par la création d'applications innovantes, j'aime donner vie aux idées à travers des applications innovantes. J'aime également prendre le temps d'écouter mes clients afin de proposer une solution qui répond efficacement au besoin. Voir la différence avant/après la mise en place d'une solution me motive énormément.",
         details: ".",
         technos: ".Net, Angular, Vue.js, React.js, Node.js, Python, Sql Server, MongoDB, Azure",
     },
