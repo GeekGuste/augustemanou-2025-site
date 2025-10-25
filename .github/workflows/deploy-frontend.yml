@@ -61,7 +61,7 @@ jobs:
           username:   ${{ secrets.FTP_USERNAME }}
           password:   ${{ secrets.FTP_PASSWORD }}
           port:       ${{ secrets.FTP_PORT || 21 }}
-          security:   explicit
+          security:   loose
           # répertoire distant de votre hébergement où doit vivre le front (ex: /www/, /public_html/, /site/…)
           server-dir: ${{ secrets.FTP_REMOTE_DIR || '/' }}
           # on envoie le contenu du dossier de build
