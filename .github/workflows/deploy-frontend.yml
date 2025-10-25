@@ -65,7 +65,7 @@ jobs:
           # répertoire distant de votre hébergement où doit vivre le front (ex: /www/, /public_html/, /site/…)
           server-dir: ${{ secrets.FTP_REMOTE_DIR || '/' }}
           # on envoie le contenu du dossier de build
-          local-dir:  ${{ env.FRONTEND_DIR }}/${{ env.BUILD_DIR }}/
+          local-dir:  ${{ env.FRONTEND_DIR }}/${{ env.BUILD_DIR }}/auguste-portfolio-2025/browser/
           # optionnel : purge avant upload (attention destructif)
           # dangerous-clean-slate: true
           exclude: |
