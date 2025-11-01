@@ -35,36 +35,27 @@ export const DATA = {
                 slug: "generateur-recettes-culinaires",
                 excerpt: "Application web qui génère des recettes personnalisées en fonction des ingrédients disponibles.",
                 description: "Application web qui génère des recettes personnalisées en fonction des ingrédients disponibles. Utilisation de l'IA pour proposer des idées de plats innovants.",
-                image: "https://sitechecker.pro/wp-content/uploads/2023/05/URL-meaning.jpg",
+                image: "/assets/projects/nesso/nesso1.png",
                 images: [
-                    'https://sitechecker.pro/wp-content/uploads/2023/05/URL-meaning.jpg',
-                    'https://sitechecker.pro/wp-content/uploads/2023/05/URL-meaning.jpg'
+                    '/assets/projects/nesso/nesso1.png',
+                    '/assets/projects/nesso/nesso2.png',
+                    '/assets/projects/nesso/nesso3.png',
+                    '/assets/projects/nesso/nesso4.png'
                 ],
                 tags: ["Angular", "FastApi", "IA", "ChatGPT", "Python", "API"],
                 url: null
-            },
-            {
-                title: "Site web de l'INFPP",
-                slug: "site-infpp",
-                excerpt: "Site web institutionnel pour l'Institut National de Formation Professionnelle et de Promotion (INFPP) au Togo.",
-                description: "Disponible sur infpp.tg, ce site web institutionnel présente les formations, les actualités et les événements de l'Institut National de Formation Professionnelle et de Promotion.",
-                image: "https://sitechecker.pro/wp-content/uploads/2023/05/URL-meaning.jpg",
-                images: [
-                    'https://sitechecker.pro/wp-content/uploads/2023/05/URL-meaning.jpg',
-                    'https://sitechecker.pro/wp-content/uploads/2023/05/URL-meaning.jpg'
-                ],
-                tags: ["HTML", "CSS", "JavaScript", "Laravel", "Bootstrap"],
-                url: "https://infpp.tg/"
             },
             {
                 title: "Refonte du site web de Cap Domicil Assistance",
                 slug: "refonte-site-cap-domicil-assistance",
                 excerpt: "Refonte complète du site web pour Cap Domicil Assistance, une entreprise de services à la personne.",
                 description: "Site web responsive et moderne pour une entreprise de services à la personne.",
-                image: "https://sitechecker.pro/wp-content/uploads/2023/05/URL-meaning.jpg",
+                image: "/assets/projects/capdomicil/capdomicil1.png",
                 images: [
-                    'https://sitechecker.pro/wp-content/uploads/2023/05/URL-meaning.jpg',
-                    'https://sitechecker.pro/wp-content/uploads/2023/05/URL-meaning.jpg'
+                    '/assets/projects/capdomicil/capdomicil1.png',
+                    '/assets/projects/capdomicil/capdomicil2.png',
+                    '/assets/projects/capdomicil/capdomicil3.png',
+                    '/assets/projects/capdomicil/capdomicil4.png'
                 ],
                 url: "http://capdomicilassistance.tincom.biz/"
             },
@@ -85,12 +76,24 @@ export const DATA = {
                 slug: "application-commande-repas-restaurant",
                 excerpt: "Application mobile permettant aux clients de commander des repas dans un restaurant.",
                 description: "Application mobile Android permettant aux clients de parcourir le menu, passer des commandes. L'application est sur des tablettes fournies aux clients dans le restaurant. Ce qui permet de réduire le temps d'attente et d'améliorer l'expérience client.",
-                image: "https://sitechecker.pro/wp-content/uploads/2023/05/URL-meaning.jpg",
+                image: "/assets/projects/resto/resto1.jpg",
                 images: [
-                    'https://sitechecker.pro/wp-content/uploads/2023/05/URL-meaning.jpg',
-                    'https://sitechecker.pro/wp-content/uploads/2023/05/URL-meaning.jpg'
+                    '/assets/projects/resto/resto1.jpg',
+                    '/assets/projects/resto/resto1.jpg'
                 ],
                 tags: ["Javascript", "Symfony", "Socket.io", "Android studio", "Java", "MySql", "SQLite"],
+            },
+            {
+                title: "Site web de l'INFPP",
+                slug: "site-infpp",
+                excerpt: "Site web institutionnel pour l'Institut National de Formation Professionnelle et de Promotion (INFPP) au Togo.",
+                description: "Disponible sur infpp.tg, ce site web institutionnel présente les formations, les actualités et les événements de l'Institut National de Formation Professionnelle et de Promotion.",
+                image: "/assets/projects/infpp/infpp1.png",
+                images: [
+                    '/assets/projects/infpp/infpp1.png'
+                ],
+                tags: ["HTML", "CSS", "JavaScript", "Laravel", "Bootstrap"],
+                url: "https://infpp.tg/"
             },
             {
                 title: "Application Web de gestion de génération de factures",
