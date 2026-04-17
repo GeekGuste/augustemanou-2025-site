@@ -11,13 +11,14 @@ export class ContactService {
   constructor(private http: HttpClient) {}
 
   sendContactForm(data: ContactMessage) {
-    const body = new HttpParams()
-      .set('from_name', data.name)
-      .set('from_email', data.email)
-      .set('subject', data.motif)
-      .set('message', data.message);
+    const body = {
+      from_name:  data.name,
+      from_email: data.email,
+      subject:    data.motif,
+      message:    data.message
+    };
 
-    return this.http.post(this.url, body.toString(), {
+    return this.http.post(this.url, body, {
       headers: {
         'Content-Type':  'application/json',
         'X-Site-Domain': 'augustemanou.com',
