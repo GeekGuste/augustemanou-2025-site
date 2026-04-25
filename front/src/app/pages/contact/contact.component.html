@@ -10,7 +10,7 @@
 </section>
 <section class="contact-page py-5">
     <div class="container text-dark" id="contact-block">
-      <p class="mb-4">Besoin d'un développeur ou d'informations ? Envoyez-moi un message directement ici 👇</p>
+      <p class="mb-4">Décrivez-moi votre besoin en quelques lignes, je vous réponds sous 48h avec une première piste concrète.</p>
   
       <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
         <div class="mb-3">
@@ -33,9 +33,10 @@
           <label for="motif" class="form-label">Motif de contact</label>
           <select id="motif" class="form-select" formControlName="motif">
             <option value="">-- Sélectionner un motif --</option>
-            <option value="frontend">Développement frontend</option>
-            <option value="backend">Développement backend</option>
-            <option value="refonte">Refonte / optimisation</option>
+            <option value="application-sur-mesure">Créer une application sur-mesure</option>
+            <option value="refonte-optimisation">Refonte / amélioration d'un site existant</option>
+            <option value="automatisation">Automatiser des processus</option>
+            <option value="mission-regie">Mission en régie</option>
             <option value="autre">Autre</option>
           </select>
         </div>

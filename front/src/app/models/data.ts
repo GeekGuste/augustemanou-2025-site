@@ -2,11 +2,11 @@ import { Title } from "@angular/platform-browser";
 
 export const DATA = {
     home: {
-        titre: "Je suis Auguste MANOU",
-        role: "Développeur web Fullstack Freelance",
-        punchline: "Vous aimeriez booster la rentabilité de votre entreprise ?",
-        punchlineShort: "Déléguez les actions répétitives à des applications !",
-        detailsPunchline: ["Automatisez des tâches répétitives.", "Mettez en place des applications qui travaillent et vendent quand vous dormez", "Scalez sans multiplier l'équipe", "Recevez des alertes en temps réel", "Calculez vos KPIs automatiquement", "Sécurisez et centralisez vos données pour gagner la confiance et faciliter la prise de décision."],
+        titre: "Auguste MANOU",
+        role: "Je développe des applications web sur-mesure pour accélérer votre croissance.",
+        punchline: "Vos équipes perdent du temps sur des tâches qui pourraient être automatisées ?",
+        punchlineShort: "Reprenez ce temps grâce à des applications conçues sur-mesure pour votre entreprise.",
+        detailsPunchline: ["Une application calquée sur votre processus exact, pas l'inverse.", "Vos tâches répétitives automatisées : vos équipes se concentrent sur ce qui rapporte.", "Un site ou une app disponible 24h/24 pour vos clients, même quand vous dormez.", "Scalez votre activité sans multiplier votre équipe.", "Vos données centralisées pour décider vite et bien.", "Un prestataire impliqué dans vos résultats, pas seulement dans le code."],
         conseilsLiberteEtGain: [
             "Libérez-vous des tâches manuelles : une règle automatisée = des heures gagnées chaque semaine.",
             "Transformez une idée en revenu passif : une app bien pensée continue de rapporter.",
@@ -21,8 +21,8 @@ export const DATA = {
         ]
     },
     about: {
-        titre: "J'aide les entreprises à propulser leur croissance grâce à des applications puissantes et sur-mesure.",
-        description: "Passionné par la création d'applications innovantes, j'aime donner vie aux idées à travers des applications innovantes. J'aime également prendre le temps d'écouter mes clients afin de proposer une solution qui répond efficacement au besoin. Voir la différence avant/après la mise en place d'une solution me motive énormément.",
+        titre: "Votre entreprise mérite des outils conçus pour elle, pas des solutions génériques.",
+        description: "Chaque entreprise a ses propres processus, ses propres contraintes, ses propres objectifs. C'est pourquoi je développe des applications web adaptées à votre fonctionnement exact, pour que vos équipes gagnent du temps, que vos clients vivent une meilleure expérience, et que votre activité puisse grandir sans friction.",
         details: ".",
         technos: ".Net, Angular, Vue.js, React.js, Node.js, Python, Sql Server, MongoDB, Azure",
     },
@@ -33,8 +33,8 @@ export const DATA = {
             {
                 title: "Application de génération de recettes culinaires",
                 slug: "generateur-recettes-culinaires",
-                excerpt: "Application web qui génère des recettes personnalisées en fonction des ingrédients disponibles.",
-                description: "Application web qui génère des recettes personnalisées en fonction des ingrédients disponibles. Utilisation de l'IA pour proposer des idées de plats innovants.",
+                excerpt: "Réduit le temps passé à planifier les repas grâce à une IA qui génère des recettes à partir des ingrédients disponibles, zéro gaspillage, zéro prise de tête.",
+                description: "Une application web qui génère des recettes personnalisées en fonction des ingrédients disponibles. L'intégration d'une IA (ChatGPT) propose des suggestions créatives en quelques secondes. Résultat : moins de gaspillage alimentaire et une expérience utilisateur fluide.",
                 image: "/assets/projects/nesso/nesso1.png",
                 images: [
                     '/assets/projects/nesso/nesso1.png',
@@ -48,8 +48,8 @@ export const DATA = {
             {
                 title: "Refonte du site web de Cap Domicil Assistance",
                 slug: "refonte-site-cap-domicil-assistance",
-                excerpt: "Refonte complète du site web pour Cap Domicil Assistance, une entreprise de services à la personne.",
-                description: "Site web responsive et moderne pour une entreprise de services à la personne.",
+                excerpt: "Une nouvelle image en ligne qui inspire confiance et convertit mieux les visiteurs en clients.",
+                description: "Refonte complète du site web de Cap Domicil Assistance, une entreprise de services à la personne. Résultat : une présence en ligne professionnelle, un site responsive accessible sur mobile, et une image de marque cohérente qui rassure les prospects dès leur première visite.",
                 image: "/assets/projects/capdomicil/capdomicil1.png",
                 images: [
                     '/assets/projects/capdomicil/capdomicil1.png',
@@ -62,8 +62,8 @@ export const DATA = {
             {
                 title: "Application de gestion de quiz par sms - Catch Your Bourse",
                 slug: "application-quiz-sms",
-                excerpt: "Jeu de quiz interactif via SMS pour des événements en direct.",
-                description: "Catch Your Bourse est une Plate forme permettant aux utilisateurs de participer à des quiz en envoyant des SMS. Les gagnants bénificient d'une bourse d'étude. Elle est constituée d'une partie Web pour gérer les quiz et afficher les résultats. Et une autre qui se connecte à un serveur SMS pour envoyer et recevoir les messages.",
+                excerpt: "Une plateforme qui transforme un quiz SMS en expérience engageante, des centaines de participants, depuis n'importe quel téléphone, sans app à installer.",
+                description: "Catch Your Bourse permet aux participants de répondre à des quiz par SMS depuis n'importe quel téléphone basique. Les organisateurs gèrent les questions et suivent les résultats en temps réel depuis une interface web. Les gagnants repartent avec une bourse d'étude. Conçu pour fonctionner à grande échelle sans friction technique.",
                 image: "https://sitechecker.pro/wp-content/uploads/2023/05/URL-meaning.jpg",
                 images: [
                     'https://sitechecker.pro/wp-content/uploads/2023/05/URL-meaning.jpg',
@@ -74,8 +74,8 @@ export const DATA = {
             {
                 title: "Application Mobile de commande de repas dans un restaurant",
                 slug: "application-commande-repas-restaurant",
-                excerpt: "Application mobile permettant aux clients de commander des repas dans un restaurant.",
-                description: "Application mobile Android permettant aux clients de parcourir le menu, passer des commandes. L'application est sur des tablettes fournies aux clients dans le restaurant. Ce qui permet de réduire le temps d'attente et d'améliorer l'expérience client.",
+                excerpt: "Réduit le temps d'attente en salle et fluidifie le service, sans recruter de personnel supplémentaire.",
+                description: "Des tablettes Android installées en salle permettent aux clients de consulter le menu et passer leurs commandes directement. Le service est fluidifié, l'attente réduite, et l'expérience client nettement améliorée, sans mobiliser davantage de serveurs. Les commandes arrivent en cuisine en temps réel via Socket.io.",
                 image: "/assets/projects/resto/resto1.jpg",
                 images: [
                     '/assets/projects/resto/resto1.jpg',
@@ -86,8 +86,8 @@ export const DATA = {
             {
                 title: "Site web de l'INFPP",
                 slug: "site-infpp",
-                excerpt: "Site web institutionnel pour l'Institut National de Formation Professionnelle et de Promotion (INFPP) au Togo.",
-                description: "Disponible sur infpp.tg, ce site web institutionnel présente les formations, les actualités et les événements de l'Institut National de Formation Professionnelle et de Promotion.",
+                excerpt: "Un site institutionnel qui valorise l'image de l'INFPP et facilite l'accès à l'information pour étudiants et partenaires.",
+                description: "Disponible sur infpp.tg, ce site présente les formations, actualités et événements de l'Institut National de Formation Professionnelle et de Promotion au Togo. Conçu pour être facilement navigable et accessible depuis n'importe quel appareil, PC, tablette ou mobile.",
                 image: "/assets/projects/infpp/infpp1.png",
                 images: [
                     '/assets/projects/infpp/infpp1.png'
@@ -98,8 +98,8 @@ export const DATA = {
             {
                 title: "Application Web de gestion de génération de factures",
                 slug: "application-gestion-factures",
-                excerpt: "Application web pour gérer la génération et le suivi des factures d'une entreprise.",
-                description: "Application web permettant de créer, gérer et suivre les factures. Elle inclut des fonctionnalités telles que la génération automatique de factures. Cela permet aux entreprises de gagner du temps et d'améliorer la précision de leur facturation.",
+                excerpt: "Divise par 3 le temps consacré à la facturation et élimine les erreurs de saisie manuelle.",
+                description: "Une application web qui permet de créer, suivre et gérer les factures en quelques clics. La génération automatique des documents réduit drastiquement le temps de traitement et les erreurs, comparé à Excel ou Word. Pensée pour les équipes comptables et les dirigeants qui veulent garder la main sur leur facturation.",
                 image: "https://sitechecker.pro/wp-content/uploads/2023/05/URL-meaning.jpg",
                 images: [
                     'https://sitechecker.pro/wp-content/uploads/2023/05/URL-meaning.jpg',
@@ -115,43 +115,43 @@ export const DATA = {
         description: "Je propose une gamme de services pour répondre à vos besoins.",
         services: [
             {
-                name: "Développement web",
+                name: "Application web sur-mesure",
                 icon: "bi bi-browser-edge",
-                slug: "developement-web",
-                description: "Création d'applications web sur-mesure.",
+                slug: "application-sur-mesure",
+                description: "Gagnez un outil qui s'adapte à votre fonctionnement, pas l'inverse.",
                 details: [
-                    "Développement d'applications web sur-mesure.",
-                    "Création de sites web responsives et performants.",
-                    "Intégration de solutions CMS pour une gestion simplifiée."
+                    "Votre processus métier traduit en application web efficace.",
+                    "Un outil disponible 24h/24 pour vos équipes et vos clients.",
+                    "Une interface pensée pour vos utilisateurs, pas pour les développeurs."
                 ],
                 image: "https://sitechecker.pro/wp-content/uploads/2023/05/URL-meaning.jpg",
-                tags: ["Développement", "Web"]
+                tags: ["Application", "Sur-mesure"]
             },
             {
-                name: "Consultation, Refonte / optimisation",
+                name: "Refonte et optimisation de votre site",
                 icon: "bi bi-globe2",
-                slug: "developement-web2",
-                description: "Modernisation de projets existants et amélioration des performances.",
+                slug: "refonte-optimisation",
+                description: "Votre site actuel freine peut-être votre croissance sans que vous le sachiez.",
                 details: [
-                    "Audit de vos projets existants.",
-                    "Refonte et optimisation pour une meilleure performance.",
-                    "Conseils sur les meilleures pratiques de développement."
+                    "Audit de votre site ou application existante.",
+                    "Amélioration des performances et de l'expérience utilisateur.",
+                    "Résultat : plus de conversions, moins de friction pour vos clients."
                 ],
                 image: "https://sitechecker.pro/wp-content/uploads/2023/05/URL-meaning.jpg",
-                tags: ["Consultation", "Refonte"]
+                tags: ["Refonte", "Optimisation"]
             },
             {
-                name: "Mise en ligne de site web et automatisation des tâches",
+                name: "Automatisation de vos processus",
                 icon: "bi bi-database-fill-check",
-                slug: "developement-web3",
-                description: "Déploiement et automatisation de vos processus.",
+                slug: "automatisation",
+                description: "Libérez votre équipe des tâches répétitives pour qu'elle se concentre sur ce qui rapporte.",
                 details: [
-                    "Mise en ligne de vos applications web.",
-                    "Automatisation des tâches répétitives.",
-                    "Intégration de solutions CI/CD pour un déploiement continu."
+                    "Identification des tâches manuelles chronophages dans votre organisation.",
+                    "Mise en place de flux automatisés adaptés à votre métier.",
+                    "Résultat : des heures récupérées chaque semaine, des erreurs humaines évitées."
                 ],
                 image: "https://sitechecker.pro/wp-content/uploads/2023/05/URL-meaning.jpg",
-                tags: ["Mise en ligne", "Automatisation"]
+                tags: ["Automatisation", "Productivité"]
             }
         ]
     }
